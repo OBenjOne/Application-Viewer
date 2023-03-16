@@ -4,7 +4,6 @@
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-require('dotenv').config()
 
 //const DATABASE_LINK = process.env.DATABASE_LINK;
 // OFFICIAL DATABASE (do not mess with this)

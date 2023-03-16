@@ -7,13 +7,6 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// allow the client to transfer data
-const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({ extended: false }));
-
-const multer = require("multer");
-const upload = multer({ dest: "uploads/" });
-
 
 const display_all_applications = require("./display-files/display-all-applications");
 
